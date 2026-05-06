@@ -7,7 +7,7 @@ export const Navbar = () => {
 
 	const handleLogout = () => {
 		sessionStorage.removeItem("token");
-		dispatch({ type: "set_token", payload: null });
+		dispatch({ type: "logout" });
 		navigate("/");
 	};
 

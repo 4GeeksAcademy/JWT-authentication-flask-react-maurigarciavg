@@ -18,7 +18,7 @@ export const Signup = () => {
         try {
             const resp = await fetch(import.meta.env.VITE_BACKEND_URL + "/api/signup", opts);
 
-            if (resp.status === 200) {
+            if (resp.status === 201) {
                 alert("¡Usuario creado con éxito! 🎉");
                 navigate("/login");
             } else {
